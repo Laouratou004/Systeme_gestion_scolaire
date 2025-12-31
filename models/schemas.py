@@ -4,9 +4,9 @@ from typing import Optional
 @dataclass
 class User:
     id: int
-    username: str
+    username: string
     password_hash: str
-    role: str  # 'Admin', 'Enseignant', 'Étudiant'
+    role: str # 'Admin', 'Enseignant', 'Étudiant'
     email: str
     created_at: str
 
