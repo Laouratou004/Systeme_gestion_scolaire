@@ -65,7 +65,7 @@ class BulletinPreviewWindow(tk.Toplevel):
         
         # Titre
         tk.Label(content, text="📋 BULLETIN DE NOTES",
-                bg="#0ea5e9", fg="white",
+                bg="#0ea5e9", fg="black",
                 font=("Arial", 22, "bold")).pack()
         
         tk.Label(content, text="Aperçu avant téléchargement",
@@ -300,7 +300,7 @@ class BulletinPreviewWindow(tk.Toplevel):
             )
             
             messagebox.showinfo(
-                "✅ Excel Généré",
+                " Excel Généré",
                 f"Bulletin exporté avec succès !\n\n"
                 f"📂 {os.path.basename(excel_path)}\n\n"
                 f"Le fichier va s'ouvrir."

@@ -84,7 +84,7 @@ class AdminFrame(tk.Frame):
         footer.pack(side="bottom", fill="x", pady=20)
         tk.Frame(footer, height=1, bg="#e2e8f0").pack(fill="x", padx=20, pady=(0, 15))
         
-        tk.Button(footer, text="🚪 Déconnexion", bg="#22c55e", fg="white", 
+        tk.Button(footer, text="Déconnexion", bg="#22c55e", fg="black", 
                  font=("Arial", 11, "bold"), command=self.controller.logout, 
                  bd=0, pady=12, cursor="hand2", relief="flat",
                  activebackground="#16a34a").pack(fill="x", padx=20)
@@ -148,16 +148,16 @@ class AdminFrame(tk.Frame):
         self.table_container.pack(fill="both", expand=True)
 
         # Actions
-        self.action_bar = tk.Frame(content, bg="#f8fafc", pady=15)
+        self.action_bar = tk.Frame(content, bg="#060D13", pady=15)
         self.action_bar.pack(fill="x", side="bottom")
 
-        tk.Button(self.action_bar, text="✏️ Modifier", bg="#0ea5e9", fg="white", font=("Arial", 10, "bold"), 
+        tk.Button(self.action_bar, text="✏️ Modifier", bg="#0ea5e9", fg="black", font=("Arial", 10, "bold"), 
                  padx=20, pady=10, bd=0, command=self.handle_edit).pack(side="left", padx=(0, 10))
         
-        tk.Button(self.action_bar, text="🗑️ Supprimer", bg="#ef4444", fg="white", font=("Arial", 10, "bold"), 
+        tk.Button(self.action_bar, text="🗑️ Supprimer", bg="#ef4444", fg="black", font=("Arial", 10, "bold"), 
                  padx=20, pady=10, bd=0, command=self.handle_delete).pack(side="left")
         
-        tk.Button(self.action_bar, text="📊 Statistiques", bg="#22c55e", fg="white", font=("Arial", 10, "bold"), 
+        tk.Button(self.action_bar, text="📊 Statistiques", bg="#22c55e", fg="black", font=("Arial", 10, "bold"), 
                  padx=20, pady=10, bd=0, command=self.show_stats).pack(side="right")
 
         self.switch_module("users")

@@ -74,10 +74,10 @@ class StudentFrame(tk.Frame):
                 logo_label.image = photo
                 logo_label.pack()
             else:
-                tk.Label(logo_box, text="G1", bg="#0ea5e9", fg="white",
+                tk.Label(logo_box, text="G1", bg="#0ea5e9", fg="black",
                         font=("Arial", 20, "bold"), width=2, height=1).pack()
         except:
-            tk.Label(logo_box, text="G1", bg="#0ea5e9", fg="white",
+            tk.Label(logo_box, text="G1", bg="#0ea5e9", fg="black",
                     font=("Arial", 20, "bold"), width=2, height=1).pack()
         
         # Nom et info
@@ -128,7 +128,7 @@ class StudentFrame(tk.Frame):
         # Bouton Voir mon Bulletin
         btn_bulletin = tk.Button(buttons_container, 
                                text="📋 Voir mon Bulletin",
-                               bg="#8b5cf6", fg="white",
+                               bg="#8b5cf6", fg="black",
                                font=("Arial", 10, "bold"),
                                padx=18, pady=10, bd=0,
                                cursor="hand2", relief="flat",
@@ -147,8 +147,8 @@ class StudentFrame(tk.Frame):
                 justify="center").pack()
         
         # Bouton déconnexion (en haut à droite)
-        tk.Button(content, text="🚪 Déconnexion",
-                 bg="#22c55e", fg="white",
+        tk.Button(content, text="Déconnexion",
+                 bg="#22c55e", fg="black",
                  font=("Arial", 9, "bold"),
                  padx=15, pady=8, bd=0,
                  cursor="hand2", relief="flat",
@@ -271,7 +271,7 @@ class StudentFrame(tk.Frame):
         admis_frame = tk.Frame(legend_frame, bg="#22c55e", bd=0)
         admis_frame.pack(side="left", padx=5)
         tk.Label(admis_frame, text="Admis (10-15.99)",
-                bg="#22c55e", fg="white",
+                bg="#22c55e", fg="black",
                 font=("Arial", 8, "bold")).pack(padx=8, pady=3)
         
         # ÉCHEC

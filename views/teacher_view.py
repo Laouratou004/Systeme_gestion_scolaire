@@ -86,7 +86,7 @@ class TeacherFrame(tk.Frame):
                 font=("Arial", 11, "bold")).pack(padx=12, pady=5)
         
         # Bouton déconnexion
-        tk.Button(content, text="🚪 Déconnexion", bg="#22c55e", fg="white",
+        tk.Button(content, text="Déconnexion", bg="#22c55e", fg="black",
                  font=("Arial", 10, "bold"), padx=20, pady=10, bd=0,
                  cursor="hand2", relief="flat",
                  activebackground="#16a34a",
@@ -178,7 +178,7 @@ class TeacherFrame(tk.Frame):
         
         # Bouton ENREGISTRER - TRÈS VISIBLE
         save_button = tk.Button(fields, text="💾 ENREGISTRER LA NOTE",
-                               bg="#22c55e", fg="white", font=("Arial", 14, "bold"),
+                               bg="#22c55e", fg="black", font=("Arial", 14, "bold"),
                                pady=18, bd=0, cursor="hand2", relief="flat",
                                activebackground="#16a34a",
                                command=self.save_grade)
